@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sion Desarrollos - Construyendo tu futuro</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="header">
         <div class="container">
             <div class="logo-container">
                 <div class="logo">SION <span>DESARROLLOS</span></div>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
                 </ul>
                 <button class="mobile-menu-btn" aria-label="Menú">
                     <span></span>
@@ -35,79 +39,106 @@
     <section class="hero" id="inicio">
         <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="reveal-text">Construyendo el <span>futuro</span> con excelencia</h1>
-                <p class="reveal-text">En Sion Desarrollos transformamos ideas en realidades concretas, ofreciendo soluciones constructivas de la más alta calidad.</p>
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                <span class="hero-subtitle">Empresa constructora</span>
+                <h1>Construyendo el <span>futuro</span> con excelencia</h1>
+                <p>En Sion Desarrollos transformamos ideas en realidades concretas, ofreciendo soluciones constructivas de la más alta calidad.</p>
                 <div class="hero-buttons">
                     <a href="#contacto" class="btn btn-primary">Contáctanos</a>
                     <a href="#proyectos" class="btn btn-secondary">Ver proyectos</a>
                 </div>
-                <div class="scroll-indicator">
-                    <div class="mouse">
-                        <div class="wheel"></div>
+                <div class="hero-clients">
+                    <p>Confiado por</p>
+                    <div class="client-logos">
+                        <div class="client-logo"></div>
+                        <div class="client-logo"></div>
+                        <div class="client-logo"></div>
                     </div>
-                    <div>Desliza para explorar</div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#servicios">
+                <span>Desliza para explorar</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
     <!-- Services Section -->
     <section class="services section-padding" id="servicios">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Lo que hacemos</span>
                 <h2 class="section-title">Nuestros Servicios</h2>
                 <p class="section-description">Ofrecemos soluciones integrales de construcción para todo tipo de proyectos</p>
             </div>
             <div class="services-container">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-home"></i>
                     </div>
                     <h3 class="service-title">Construcción Residencial</h3>
                     <p>Construimos el hogar de tus sueños con los más altos estándares de calidad y atención personalizada a cada detalle.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-building"></i>
                     </div>
                     <h3 class="service-title">Proyectos Comerciales</h3>
                     <p>Desarrollamos espacios comerciales funcionales y atractivos que potencian el crecimiento de tu negocio.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-industry"></i>
                     </div>
                     <h3 class="service-title">Infraestructura Industrial</h3>
                     <p>Soluciones eficientes para proyectos industriales, cumpliendo con todos los estándares de seguridad y funcionalidad.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <i class="fas fa-pencil-ruler"></i>
                     </div>
                     <h3 class="service-title">Diseño Arquitectónico</h3>
                     <p>Creamos diseños innovadores que combinan estética, funcionalidad y eficiencia energética.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <i class="fas fa-hammer"></i>
                     </div>
                     <h3 class="service-title">Remodelaciones</h3>
                     <p>Transformamos espacios existentes para darles nueva vida y funcionalidad según tus necesidades.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
                     <h3 class="service-title">Gestión de Proyectos</h3>
                     <p>Administramos cada fase de tu proyecto para garantizar resultados de calidad, en tiempo y dentro del presupuesto.</p>
-                    <a href="#contacto" class="service-link">Saber más <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contacto" class="service-link">
+                        <span>Saber más</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -116,19 +147,19 @@
     <!-- Featured Projects Section -->
     <section class="projects section-padding" id="proyectos">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Nuestro Portafolio</span>
                 <h2 class="section-title">Proyectos Destacados</h2>
                 <p class="section-description">Conoce algunos de nuestros proyectos más emblemáticos</p>
             </div>
-            <div class="projects-filter">
+            <div class="projects-filter" data-aos="fade-up">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="residencial">Residencial</button>
                 <button class="filter-btn" data-filter="comercial">Comercial</button>
                 <button class="filter-btn" data-filter="industrial">Industrial</button>
             </div>
             <div class="projects-container">
-                <div class="project-card" data-category="residencial">
+                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-img-container">
                         <img src="/api/placeholder/600/400" alt="Torres Mirador" class="project-img">
                         <div class="project-overlay">
@@ -141,7 +172,7 @@
                         <p>Complejo residencial de lujo con 120 apartamentos, áreas comunes y vista panorámica.</p>
                     </div>
                 </div>
-                <div class="project-card" data-category="comercial">
+                <div class="project-card" data-category="comercial" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-img-container">
                         <img src="/api/placeholder/600/400" alt="Centro Empresarial Sion" class="project-img">
                         <div class="project-overlay">
@@ -154,7 +185,7 @@
                         <p>Moderno edificio de oficinas con certificación LEED y tecnología de vanguardia.</p>
                     </div>
                 </div>
-                <div class="project-card" data-category="industrial">
+                <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-img-container">
                         <img src="/api/placeholder/600/400" alt="Parque Logístico Norte" class="project-img">
                         <div class="project-overlay">
@@ -167,7 +198,7 @@
                         <p>Centro de distribución con 15,000 m² de espacio optimizado para operaciones logísticas.</p>
                     </div>
                 </div>
-                <div class="project-card" data-category="residencial">
+                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-img-container">
                         <img src="/api/placeholder/600/400" alt="Residencias El Paraíso" class="project-img">
                         <div class="project-overlay">
@@ -181,23 +212,129 @@
                     </div>
                 </div>
             </div>
-            <div class="view-more-container">
+            <div class="view-more-container" data-aos="fade-up">
                 <a href="#" class="btn btn-outline">Ver todos los proyectos</a>
             </div>
         </div>
     </section>
 
+    <!-- Modal para ver detalles de proyecto -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="gallery-main">
+                        <img id="modalMainImage" src="/api/placeholder/800/600" alt="Imagen principal del proyecto">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <div class="thumb active">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 1">
+                        </div>
+                        <div class="thumb">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 2">
+                        </div>
+                        <div class="thumb">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 3">
+                        </div>
+                        <div class="thumb">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <span class="project-category" id="modalCategory">Residencial</span>
+                    <h2 id="modalTitle">Nombre del Proyecto</h2>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="modalLocation">Ubicación del Proyecto</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span id="modalYear">Año: 2023</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span id="modalArea">Área: 5,000 m²</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Acerca del Proyecto</h3>
+                        <p id="modalDescription">Descripción detallada del proyecto que muestra las características principales, retos superados y resultados obtenidos. Esta sección puede incluir múltiples párrafos para explicar a fondo el proyecto.</p>
+                    </div>
+                    <div class="project-features">
+                        <h3>Características</h3>
+                        <ul id="modalFeatures">
+                            <li>Característica 1 del proyecto</li>
+                            <li>Característica 2 del proyecto</li>
+                            <li>Característica 3 del proyecto</li>
+                            <li>Característica 4 del proyecto</li>
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">Consultar sobre este proyecto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página completa para todos los proyectos -->
+    <div id="allProjectsPage" class="all-projects-page">
+        <div class="page-header">
+            <div class="container">
+                <a href="#" class="back-button" id="backToMain"><i class="fas fa-arrow-left"></i> Volver</a>
+                <h1>Todos Nuestros Proyectos</h1>
+                <p>Explore nuestra cartera completa de proyectos organizados por categoría</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="residencial">Residencial</button>
+                <button class="filter-btn" data-filter="comercial">Comercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+            <div class="full-projects-grid" id="fullProjectsGrid">
+                <!-- Aquí se cargarán dinámicamente todos los proyectos -->
+            </div>
+        </div>
+    </div>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-number" data-count="250">0</div>
+                        <div class="stat-title">Proyectos Completados</div>
+                    </div>
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-title">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-title">Profesionales</div>
+                    </div>
+                    <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-title">Clientes Satisfechos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <!-- Why Choose Us Section -->
     <section class="why-us section-padding">
         <div class="container">
             <div class="why-us-content">
-                <div class="why-us-text">
+                <div class="why-us-text" data-aos="fade-right">
                     <span class="section-subtitle">¿Por qué elegirnos?</span>
                     <h2 class="section-title">Comprometidos con la excelencia en cada proyecto</h2>
                     <p>En Sion Desarrollos nos distinguimos por nuestra pasión por la calidad, la innovación y el servicio al cliente. Cada proyecto es una oportunidad para demostrar nuestra experiencia y compromiso.</p>
                     
                     <div class="feature-list">
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                             <div class="feature-icon">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -206,7 +343,7 @@
                                 <p>Utilizamos los mejores materiales y tecnologías de construcción.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                             <div class="feature-icon">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -215,7 +352,7 @@
                                 <p>Cumplimos rigurosamente con los plazos establecidos.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                             <div class="feature-icon">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -224,7 +361,7 @@
                                 <p>Contamos con especialistas altamente calificados en cada área.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
+                        <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                             <div class="feature-icon">
                                 <i class="fas fa-check"></i>
                             </div>
@@ -235,7 +372,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="why-us-image">
+                <div class="why-us-image" data-aos="fade-left">
                     <img src="/api/placeholder/600/800" alt="Equipo Sion Desarrollos">
                 </div>
             </div>
@@ -245,36 +382,48 @@
     <!-- About Section -->
     <section class="about section-padding" id="nosotros">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Conócenos</span>
                 <h2 class="section-title">Sobre Nosotros</h2>
                 <p class="section-description">15 años de experiencia construyendo el futuro</p>
             </div>
             <div class="about-content">
-                <div class="about-img">
+                <div class="about-img" data-aos="fade-right">
                     <img src="images/constructores-1.jpg" alt="Equipo Sion Desarrollos">
                     <div class="experience-badge">
                         <span>15+</span>
                         <p>Años de<br>Experiencia</p>
                     </div>
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-left">
                     <h3>Construyendo confianza y calidad desde 2010</h3>
                     <p>Sion Desarrollos es una empresa líder en el sector de la construcción con más de 15 años de experiencia. Nuestro equipo de profesionales altamente calificados está comprometido con la excelencia y la innovación en cada proyecto que emprendemos.</p>
                     <p>Nos distinguimos por nuestra capacidad para entregar proyectos de alta calidad, respetando tiempos y presupuestos, siempre con un enfoque sustentable y orientado a satisfacer las necesidades específicas de cada cliente.</p>
                     
-                    <div class="stats-container">
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="250">0</div>
-                            <div class="stat-title">Proyectos Completados</div>
+                    <div class="about-values">
+                        <div class="value-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="value-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h4>Excelencia</h4>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="50">0</div>
-                            <div class="stat-title">Profesionales</div>
+                        <div class="value-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="value-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Confianza</h4>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" data-count="100">0</div>
-                            <div class="stat-title">Clientes Satisfechos</div>
+                        <div class="value-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovación</h4>
+                        </div>
+                        <div class="value-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>Sustentabilidad</h4>
                         </div>
                     </div>
                 </div>
@@ -285,19 +434,15 @@
     <!-- Testimonials Section -->
     <section class="testimonials section-padding">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Testimonios</span>
                 <h2 class="section-title">Lo que dicen nuestros clientes</h2>
                 <p class="section-description">La satisfacción de nuestros clientes es nuestra mejor carta de presentación</p>
             </div>
-            <div class="testimonials-container">
+            <div class="testimonials-container" data-aos="fade-up">
                 <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
                     </div>
                     <p class="testimonial-text">Sion Desarrollos transformó nuestra idea en una realidad que superó todas nuestras expectativas. Su profesionalismo y atención al detalle son incomparables.</p>
                     <div class="testimonial-author">
@@ -305,16 +450,19 @@
                         <div class="author-info">
                             <h4>Carlos Mendoza</h4>
                             <p>Propietario, Residencial Las Palmas</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
                     </div>
                     <p class="testimonial-text">Trabajar con Sion Desarrollos fue una experiencia excepcional. Entregaron nuestro proyecto comercial a tiempo y dentro del presupuesto, con una calidad superior.</p>
                     <div class="testimonial-author">
@@ -322,16 +470,19 @@
                         <div class="author-info">
                             <h4>Laura Sánchez</h4>
                             <p>Directora, Grupo Empresarial Ágora</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
                     </div>
                     <p class="testimonial-text">Su enfoque innovador y sustentable hizo que nuestro proyecto industrial fuera no solo funcional sino también eficiente energéticamente, generando ahorros significativos.</p>
                     <div class="testimonial-author">
@@ -339,6 +490,13 @@
                         <div class="author-info">
                             <h4>Roberto Guzmán</h4>
                             <p>CEO, Industrias RTG</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -349,7 +507,7 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <div class="cta-content">
+            <div class="cta-content" data-aos="fade-up">
                 <h2>¿Listo para construir tu próximo proyecto?</h2>
                 <p>Contáctanos hoy mismo y conviértete en parte de nuestra historia de éxito.</p>
                 <a href="#contacto" class="btn btn-light">Solicitar cotización</a>
@@ -360,13 +518,13 @@
     <!-- Contact Section -->
     <section class="contact section-padding" id="contacto">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Ponte en contacto</span>
                 <h2 class="section-title">Contáctanos</h2>
                 <p class="section-description">Estamos listos para escuchar tus ideas y convertirlas en realidad</p>
             </div>
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <div class="info-item">
                         <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -410,21 +568,25 @@
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="contact-form-container">
+                <div class="contact-form-container" data-aos="fade-left">
                     <form class="contact-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Tu Nombre" required>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Tu Email" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Tu email" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Asunto">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" class="form-control" placeholder="Asunto">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Tu Mensaje" required></textarea>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" class="form-control" placeholder="Tu mensaje" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
                     </form>
@@ -435,6 +597,7 @@
 
     <!-- Map Section -->
     <section class="map-section">
+        <div class="map-overlay"></div>
         <img src="/api/placeholder/1920/400" alt="Mapa de ubicación" class="map-img">
     </section>
 
@@ -498,84 +661,8 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- JavaScript for interaction -->
-    <script>
-        // Simple mobile menu toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
-
-        // Project filtering
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                const filter = button.getAttribute('data-filter');
-                
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Animation for stats counter
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            const speed = 200;
-            
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-count');
-                const count = +counter.innerText;
-                const increment = target / speed;
-                
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            });
-        }
-
-        // Trigger counter animation when section is in view
-        const aboutSection = document.querySelector('.about');
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, options);
-
-        observer.observe(aboutSection);
-    </script>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="app/script.js"></script>
 </body>
 </html>
