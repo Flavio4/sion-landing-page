@@ -1,3 +1,5 @@
+import allProjects from "./projects.js";
+
 // Initialize AOS
 AOS.init({
   duration: 800,
@@ -115,7 +117,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const allProjects = [
+/* const allProjects = [
     {
       id: 1,
       category: "residencial",
@@ -167,7 +169,7 @@ const allProjects = [
       fullDescription:
         "El Centro Empresarial Sion representa un hito en la arquitectura corporativa de la ciudad, combinando funcionalidad, eficiencia energética y diseño vanguardista. Este edificio de 12 pisos alberga espacios de oficina de clase mundial, áreas comerciales en los primeros niveles y un sky lobby en el último piso con vistas panorámicas. Su fachada de doble piel reduce la ganancia térmica mientras maximiza la luz natural, contribuyendo a su certificación LEED Gold.",
     },
-  ];
+  ]; */
   
 
 // Implementar funcionalidad de proyectos
