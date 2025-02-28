@@ -1,4 +1,4 @@
-const allProjects = [
+const projectsData = [
     {
       id: 1,
       category: "residencial",
@@ -100,5 +100,3 @@ const allProjects = [
         "El Colegio del Futuro es un proyecto educativo innovador que promueve el aprendizaje activo, la creatividad y la tecnología como herramientas para el desarrollo integral de los estudiantes. Con aulas inteligentes, laboratorios de ciencias y espacios flexibles, el colegio brinda un ambiente propicio para la experimentación y la colaboración. Además, su diseño sostenible y sus áreas verdes fomentan la conexión con la naturaleza y el bienestar de la comunidad educativa.",
     },
   ];
-
-  export default allProjects;

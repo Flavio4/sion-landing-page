@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sion Desarrollos - Construyendo tu futuro</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -144,185 +144,30 @@
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section class="projects section-padding" id="proyectos">
+
+    <!-- Stats Section -->
+    <section class="stats-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Nuestro Portafolio</span>
-                <h2 class="section-title">Proyectos Destacados</h2>
-                <p class="section-description">Conoce algunos de nuestros proyectos más emblemáticos</p>
-            </div>
-            <div class="projects-filter" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="residencial">Residencial</button>
-                <button class="filter-btn" data-filter="comercial">Comercial</button>
-                <button class="filter-btn" data-filter="industrial">Industrial</button>
-            </div>
-            <div class="projects-container">
-                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-img-container">
-                        <img src="/api/placeholder/600/400" alt="Torres Mirador" class="project-img">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Residencial</span>
-                        <h3 class="project-title">Torres Mirador</h3>
-                        <p>Complejo residencial de lujo con 120 apartamentos, áreas comunes y vista panorámica.</p>
-                    </div>
+            <div class="stats-grid">
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="250">0</div>
+                    <div class="stat-title">Proyectos Completados</div>
                 </div>
-                <div class="project-card" data-category="comercial" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-img-container">
-                        <img src="/api/placeholder/600/400" alt="Centro Empresarial Sion" class="project-img">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Comercial</span>
-                        <h3 class="project-title">Centro Empresarial Sion</h3>
-                        <p>Moderno edificio de oficinas con certificación LEED y tecnología de vanguardia.</p>
-                    </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-title">Años de Experiencia</div>
                 </div>
-                <div class="project-card" data-category="industrial" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-img-container">
-                        <img src="/api/placeholder/600/400" alt="Parque Logístico Norte" class="project-img">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Industrial</span>
-                        <h3 class="project-title">Parque Logístico Norte</h3>
-                        <p>Centro de distribución con 15,000 m² de espacio optimizado para operaciones logísticas.</p>
-                    </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-title">Profesionales</div>
                 </div>
-                <div class="project-card" data-category="residencial" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-img-container">
-                        <img src="/api/placeholder/600/400" alt="Residencias El Paraíso" class="project-img">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Residencial</span>
-                        <h3 class="project-title">Residencias El Paraíso</h3>
-                        <p>Conjunto de casas unifamiliares con acabados de lujo y espacios verdes integrados.</p>
-                    </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-title">Clientes Satisfechos</div>
                 </div>
-            </div>
-            <div class="view-more-container" data-aos="fade-up">
-                <a href="#" class="btn btn-outline">Ver todos los proyectos</a>
             </div>
         </div>
     </section>
-
-    <!-- Modal para ver detalles de proyecto -->
-    <div id="projectModal" class="project-modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-body">
-                <div class="modal-gallery">
-                    <div class="gallery-main">
-                        <img id="modalMainImage" src="/api/placeholder/800/600" alt="Imagen principal del proyecto">
-                    </div>
-                    <div class="gallery-thumbs">
-                        <div class="thumb active">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 1">
-                        </div>
-                        <div class="thumb">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 2">
-                        </div>
-                        <div class="thumb">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 3">
-                        </div>
-                        <div class="thumb">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 4">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-info">
-                    <span class="project-category" id="modalCategory">Residencial</span>
-                    <h2 id="modalTitle">Nombre del Proyecto</h2>
-                    <div class="project-details">
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span id="modalLocation">Ubicación del Proyecto</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span id="modalYear">Año: 2023</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-ruler-combined"></i>
-                            <span id="modalArea">Área: 5,000 m²</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <h3>Acerca del Proyecto</h3>
-                        <p id="modalDescription">Descripción detallada del proyecto que muestra las características principales, retos superados y resultados obtenidos. Esta sección puede incluir múltiples párrafos para explicar a fondo el proyecto.</p>
-                    </div>
-                    <div class="project-features">
-                        <h3>Características</h3>
-                        <ul id="modalFeatures">
-                            <li>Característica 1 del proyecto</li>
-                            <li>Característica 2 del proyecto</li>
-                            <li>Característica 3 del proyecto</li>
-                            <li>Característica 4 del proyecto</li>
-                        </ul>
-                    </div>
-                    <a href="#contacto" class="btn btn-primary">Consultar sobre este proyecto</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Página completa para todos los proyectos -->
-    <div id="allProjectsPage" class="all-projects-page">
-        <div class="page-header">
-            <div class="container">
-                <a href="#" class="back-button" id="backToMain"><i class="fas fa-arrow-left"></i> Volver</a>
-                <h1>Todos Nuestros Proyectos</h1>
-                <p>Explore nuestra cartera completa de proyectos organizados por categoría</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="projects-filter" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="residencial">Residencial</button>
-                <button class="filter-btn" data-filter="comercial">Comercial</button>
-                <button class="filter-btn" data-filter="industrial">Industrial</button>
-            </div>
-            <div class="full-projects-grid" id="fullProjectsGrid">
-                <!-- Aquí se cargarán dinámicamente todos los proyectos -->
-            </div>
-        </div>
-    </div>
-
-        <!-- Stats Section -->
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="stat-number" data-count="250">0</div>
-                        <div class="stat-title">Proyectos Completados</div>
-                    </div>
-                    <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="stat-number" data-count="15">0</div>
-                        <div class="stat-title">Años de Experiencia</div>
-                    </div>
-                    <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-number" data-count="50">0</div>
-                        <div class="stat-title">Profesionales</div>
-                    </div>
-                    <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
-                        <div class="stat-number" data-count="100">0</div>
-                        <div class="stat-title">Clientes Satisfechos</div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
     <!-- Why Choose Us Section -->
     <section class="why-us section-padding">
@@ -663,6 +508,6 @@
 
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="app/script.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
