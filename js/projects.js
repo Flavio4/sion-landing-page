@@ -185,7 +185,7 @@ function loadProjects() {
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
                 <button class="project-link-btn view-project-btn" data-project="${project.id}">
-                    Ver proyecto <i class="fas fa-eye"></i>
+                    Ver detalles <i class="fas fa-eye"></i>
                 </button>
             </div>
         `;
