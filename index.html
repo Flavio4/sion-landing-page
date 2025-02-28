@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sion Desarrollos - Construyendo tu futuro</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/projects-section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects-section.css">
+    <link rel="stylesheet" href="css/projects-modal.css">
 </head>
 <body>
     <!-- Header -->
@@ -159,6 +160,63 @@
             </div>
         </div>
     </section>
+
+    <!-- Projects Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="gallery-main">
+                        <img id="modalMainImage" src="/api/placeholder/800/600" alt="Imagen principal del proyecto">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <div class="thumb active">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 1">
+                        </div>
+                        <div class="thumb">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 2">
+                        </div>
+                        <div class="thumb">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 3">
+                        </div>
+                        <div class="thumb">
+                            <img src="/api/placeholder/150/100" alt="Miniatura 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <span class="project-category" id="modalCategory">Residencial</span>
+                    <h2 id="modalTitle">Nombre del Proyecto</h2>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="modalLocation">Ubicación del Proyecto</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span id="modalYear">Año: 2023</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span id="modalArea">Área: 5,000 m²</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Acerca del Proyecto</h3>
+                        <p id="modalDescription">Descripción detallada del proyecto que muestra las características principales, retos superados y resultados obtenidos.</p>
+                    </div>
+                    <div class="project-features">
+                        <h3>Características</h3>
+                        <ul id="modalFeatures">
+                            <!-- Las características se cargarán dinámicamente -->
+                        </ul>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary" id="modalContactBtn">Consultar sobre este proyecto</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Stats Section -->
@@ -522,9 +580,12 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
+
+
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js" type="module"></script>
     <script src="js/projects.js"></script>
+    <script src="js/project-modal.js"></script>
 </body>
 </html>

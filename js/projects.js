@@ -1,3 +1,4 @@
+// Datos de proyectos
 const projectsData = [
     {
       id: 1,
@@ -155,9 +156,6 @@ const projectsData = [
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar proyectos en el grid
     loadProjects();
-    
-    // Configurar eventos para los botones de proyectos
-    setupProjectEvents();
 });
 
 // Función para cargar los proyectos en la página
@@ -176,6 +174,7 @@ function loadProjects() {
         projectCard.className = 'project-card';
         projectCard.setAttribute('data-aos', 'fade-up');
         projectCard.setAttribute('data-aos-delay', delay);
+        projectCard.setAttribute('data-id', project.id);
         
         projectCard.innerHTML = `
             <div class="project-img-container">
@@ -185,40 +184,60 @@ function loadProjects() {
                 <span class="project-category">${project.category.charAt(0).toUpperCase() + project.category.slice(1)}</span>
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
-                <a href="#contacto" class="project-link-btn" data-project="${project.id}">
-                    Solicitar información <i class="fas fa-arrow-right"></i>
-                </a>
+                <button class="project-link-btn view-project-btn" data-project="${project.id}">
+                    Ver proyecto <i class="fas fa-eye"></i>
+                </button>
             </div>
         `;
         
         projectsGrid.appendChild(projectCard);
     });
+    
+    // Configurar eventos para los botones de ver proyecto
+    setupProjectButtons();
 }
 
 // Configurar eventos para los botones de proyectos
-function setupProjectEvents() {
+function setupProjectButtons() {
     // Esperar a que los proyectos estén cargados
     setTimeout(() => {
-        // Obtener todos los botones de contacto de proyectos
-        const projectButtons = document.querySelectorAll('.project-link-btn');
+        // Obtener todos los botones de ver proyecto
+        const viewProjectButtons = document.querySelectorAll('.view-project-btn');
         
         // Agregar evento clic a cada botón
-        projectButtons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                const projectTitle = this.closest('.project-card').querySelector('.project-title').textContent;
+        viewProjectButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const projectId = this.getAttribute('data-project');
                 
-                // Pre-completar el campo de asunto en el formulario de contacto
-                const subjectField = document.getElementById('asunto');
-                if (subjectField) {
-                    subjectField.value = `Consulta sobre proyecto: ${projectTitle}`;
+                // Abrir modal con los detalles del proyecto
+                if (typeof openProjectModal === 'function') {
+                    openProjectModal(projectId);
+                } else {
+                    console.error('La función openProjectModal no está definida.');
                 }
-                
-                // Enfocar el formulario de contacto cuando llegue a él
-                setTimeout(() => {
-                    const nameField = document.getElementById('nombre');
-                    if (nameField) nameField.focus();
-                }, 800);
             });
+        });
+        
+        // También agregar evento clic a las imágenes de los proyectos
+        const projectImgContainers = document.querySelectorAll('.project-img-container');
+        
+        projectImgContainers.forEach(container => {
+            container.addEventListener('click', function() {
+                const projectCard = this.closest('.project-card');
+                if (projectCard) {
+                    const projectId = projectCard.getAttribute('data-id');
+                    
+                    // Abrir modal con los detalles del proyecto
+                    if (typeof openProjectModal === 'function') {
+                        openProjectModal(projectId);
+                    } else {
+                        console.error('La función openProjectModal no está definida.');
+                    }
+                }
+            });
+            
+            // Hacer que el cursor sea de puntero al pasar sobre la imagen
+            container.style.cursor = 'pointer';
         });
     }, 500); // Pequeño timeout para asegurar que los elementos estén en el DOM
 }
