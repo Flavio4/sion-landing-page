@@ -243,6 +243,14 @@ img {
     padding: 15px 0;
 }
 
+.header.scrolled .mobile-menu-btn span {
+    background-color: var(--color-text);
+}
+
+.header.scrolled .logo-container span {
+    color: var(--color-text);
+}
+
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -262,7 +270,7 @@ img {
 }
 
 .logo span {
-    color: var(--color-tertiary);
+    color: var(--color-primary);
 }
 
 nav {
@@ -313,7 +321,7 @@ nav {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: var(--color-text);
+    background-color: var(--color-secondary);
     position: absolute;
     left: 0;
     transition: var(--transition);
