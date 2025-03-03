@@ -1257,6 +1257,10 @@ footer {
         z-index: 1000;
         padding: 80px 0;
     }
+
+    .header .nav-link {
+        color: var(--color-text);
+    }
     
     .nav-links.active {
         right: 0;
