@@ -42,14 +42,12 @@
     <section class="hero" id="inicio">
         <!-- Imágenes hero responsivas usando picture -->
         <picture class="hero-background">
-            <!-- Versión WebP para móvil -->
-            <source media="(max-width: 768px)" srcset="/images/hero/hero_image1.webp" type="image/webp">
-            <!-- Versión JPG para móvil (fallback) -->
-            <source media="(max-width: 768px)" srcset="/images/hero/hero_image1.webp" type="image/webp">
-            <!-- Versión WebP para desktop -->
-            <source srcset="/images/hero/hero_image1.webp" type="image/webp">
-            <!-- Versión JPG para desktop (fallback) -->
-            <img src="/images/hero/hero_image1.webp" alt="Sion Desarrollos - Construyendo el futuro" class="hero-img"> 
+            <!-- Versión para móvil -->
+            <source media="(max-width: 768px)" srcset="images/hero/hero_image1.webp" type="image/webp">
+            <!-- Versión para desktop -->
+            <source srcset="images/hero/hero_image1.webp" type="image/webp">
+            <!-- Fallback -->
+            <img src="images/hero/hero_image1.webp" alt="Sion Desarrollos - Construyendo el futuro" class="hero-img"> 
         </picture>
 
         <div class="hero-overlay"></div>
