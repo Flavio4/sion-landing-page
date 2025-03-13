@@ -416,7 +416,7 @@ nav {
 
 .service-icon i {
     font-size: 2rem;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
 }
 
 .service-title {
@@ -633,7 +633,7 @@ nav {
 
 .value-icon i {
     font-size: 1.5rem;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
 }
 
 .value-item h4 {
@@ -772,7 +772,7 @@ nav {
     width: 56px;
     height: 56px;
     background-color: var(--color-tertiary-light);
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
