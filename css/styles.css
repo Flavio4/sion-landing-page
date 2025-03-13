@@ -918,7 +918,7 @@ footer {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-links h3, .footer-newsletter h3 {
+.footer-links h3, .footer-contact h3 {
     color: var(--color-primary);
     font-size: 1.3rem;
     margin-bottom: 32px;
@@ -926,7 +926,7 @@ footer {
     padding-bottom: 12px;
 }
 
-.footer-links h3::after, .footer-newsletter h3::after {
+.footer-links h3::after, .footer-contact h3::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -951,33 +951,9 @@ footer {
     transform: translateX(5px);
 }
 
-.footer-newsletter p {
+.footer-contact p {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 24px;
-}
-
-.newsletter-form {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: var(--border-radius-full);
-    overflow: hidden;
-}
-
-.newsletter-form input {
-    flex: 1;
-    background: transparent;
-    border: none;
-    padding: 16px 24px;
-    color: var(--color-text-light);
-    font-family: var(--font-primary);
-}
-
-.newsletter-form input:focus {
-    outline: none;
-}
-
-.newsletter-form input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
 }
 
 .btn-subscribe {
@@ -1018,11 +994,58 @@ footer {
     color: var(--color-tertiary);
 }
 
-/* =========== BACK TO TOP BUTTON =========== */
-.back-to-top {
+/* =========== FLOATING BUTTONS STYLES =========== */
+.floating-buttons {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99;
+    align-items: center;
+}
+
+/* =========== WHATSAPP BUTTON STYLES =========== */
+.whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    color: var(--color-text-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    font-size: 1.5rem;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+@keyframes whatsapp-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-btn {
+    animation: whatsapp-pulse 2s infinite;
+}
+
+
+/* =========== BACK TO TOP BUTTON =========== */
+.back-to-top {
     width: 50px;
     height: 50px;
     background-color: var(--color-secondary);
@@ -1036,7 +1059,6 @@ footer {
     visibility: hidden;
     transform: translateY(20px);
     transition: var(--transition);
-    z-index: 99;
     font-size: 1.2rem;
 }
 
@@ -1152,7 +1174,7 @@ footer {
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .feature-list, .about-values {
         grid-template-columns: 1fr;
     }
@@ -1173,6 +1195,18 @@ footer {
     
     .cta p {
         font-size: 1.1rem;
+    }
+
+    .floating-buttons {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+    }
+
+    .whatsapp-btn, .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
     }
 
 }

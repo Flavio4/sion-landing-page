@@ -1,83 +1,90 @@
 const ProjectState = Object.freeze({
-    ON_SALE: "en venta",
-    SOLD: "vendido",
-    UNDER_CONSTRUCTION: "en construccion",
+  ON_SALE: "en venta",
+  SOLD: "vendido",
+  UNDER_CONSTRUCTION: "en construccion",
 });
 
 // Datos de proyectos
 const projectsData = [
-    {
-      id: 1,
-      state: ProjectState.ON_SALE,
-      title: "Torres Mirador",
-      description:
-        "Complejo residencial de lujo con 120 apartamentos, áreas comunes y vista panorámica.",
-      image: "/api/placeholder/600/400",
-      location: "Ciudad Centro",
-      year: "2022",
-      area: "25,000 m²",
-      features: [
-        "Piscina y áreas deportivas",
-        "Terraza panorámica con áreas sociales",
-        "Sistema de seguridad 24/7",
-        "Estacionamiento subterráneo",
-      ],
-      gallery: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-      fullDescription:
-        "Torres Mirador es un exclusivo desarrollo residencial que combina lujo, confort y naturaleza en un entorno urbano privilegiado. El proyecto consta de dos torres de 15 pisos con 120 apartamentos de diferentes metrajes, desde 80m² hasta 180m², todos con vistas panorámicas a la ciudad o a las montañas. El diseño arquitectónico maximiza la luz natural y la ventilación cruzada en cada unidad, mientras que los espacios comunes ofrecen amenidades de primer nivel para el disfrute de residentes y visitantes.",
-    },
-    {
-      id: 2,
-      state: ProjectState.SOLD,
-      title: "Centro Empresarial Sion",
-      description:
-        "Moderno edificio de oficinas con certificación LEED y tecnología de vanguardia.",
-      image: "/api/placeholder/600/400",
-      location: "Distrito Financiero",
-      year: "2023",
-      area: "18,000 m²",
-      features: [
-        "Oficinas clase A+ con plantas libres",
-        "Sistema BMS para control inteligente",
-        "Certificación LEED Gold",
-        "Auditorio para 250 personas",
-      ],
-      gallery: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-      fullDescription:
-        "El Centro Empresarial Sion representa un hito en la arquitectura corporativa de la ciudad, combinando funcionalidad, eficiencia energética y diseño vanguardista. Este edificio de 12 pisos alberga espacios de oficina de clase mundial, áreas comerciales en los primeros niveles y un sky lobby en el último piso con vistas panorámicas. Su fachada de doble piel reduce la ganancia térmica mientras maximiza la luz natural, contribuyendo a su certificación LEED Gold.",
-    },
-    {
-      id: 3,
-      state: ProjectState.UNDER_CONSTRUCTION,
-      title: "Hospital del Valle",
-      description:
-        "Centro médico de alta complejidad con tecnología de punta y servicios integrales.",
-      image: "/api/placeholder/600/400",
-      location: "Valle de la Salud",
-      year: "2024",
-      area: "35,000 m²",
-      features: [
-        "Quirófanos y salas de recuperación",
-        "Unidad de cuidados intensivos",
-        "Centro de diagnóstico por imágenes",
-        "Áreas de hospitalización y consultorios",
-      ],
-      gallery: [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-      ],
-      fullDescription:
-        "El Hospital del Valle es un proyecto de salud de última generación que ofrece servicios médicos de alta complejidad en un entorno seguro y confortable. Con una ubicación estratégica y un diseño arquitectónico innovador, el hospital cuenta con áreas de hospitalización, quirófanos, laboratorios y consultorios equipados con tecnología de punta. Además, su enfoque en la sostenibilidad y la eficiencia energética lo convierten en un referente en la región.",
-    },
+  {
+    id: 1,
+    state: ProjectState.ON_SALE,
+    title: "Residencia Valle Verde",
+    description:
+      "Casa moderna de lujo con amplios espacios, jardín, piscina y acabados de primera calidad.",
+    image: "/api/placeholder/600/400",
+    location: "Valle Verde, Sector Exclusivo",
+    year: "2024",
+    area: "450 m²",
+    features: [
+      "4 habitaciones con baño privado",
+      "Cocina gourmet con isla central",
+      "Piscina con terraza y área de barbacoa",
+      "Sistema domótico integrado",
+      "Jardín paisajístico con sistema de riego automatizado"
+    ],
+    gallery: [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+    ],
+    fullDescription:
+      "Residencia Valle Verde es una espectacular casa de lujo diseñada para quienes buscan exclusividad y confort. Ubicada en una de las zonas más prestigiosas de la ciudad, esta propiedad de 450m² combina elegancia arquitectónica y funcionalidad. La planta baja ofrece amplios espacios sociales con ventanales de piso a techo que integran el interior con el jardín y la piscina. La cocina gourmet cuenta con electrodomésticos de alta gama e isla central. En la planta alta, la suite principal incluye vestidor y baño tipo spa. El sistema domótico permite controlar iluminación, clima, seguridad y entretenimiento desde una aplicación móvil. Los acabados de mármol, madera de nogal y cristal templado reflejan la calidad superior que caracteriza nuestras construcciones.",
+  },
+  {
+    id: 2,
+    state: ProjectState.SOLD,
+    title: "Casa Familiar Los Pinos",
+    description:
+      "Acogedora residencia familiar con espacios versátiles, perfecta para familias jóvenes.",
+    image: "/api/placeholder/600/400",
+    location: "Urbanización Los Pinos",
+    year: "2023",
+    area: "280 m²",
+    features: [
+      "3 habitaciones y 2.5 baños",
+      "Sala de estar y comedor integrados",
+      "Estudio/habitación flexible",
+      "Patio trasero con juegos infantiles",
+      "Garaje para 2 vehículos"
+    ],
+    gallery: [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+    ],
+    fullDescription:
+      "Casa Familiar Los Pinos representa la vivienda ideal para familias contemporáneas. Con un diseño práctico y acogedor, esta residencia de 280m² ofrece espacios versátiles que se adaptan al crecimiento familiar. La planta baja presenta un concepto abierto que integra sala, comedor y cocina, creando un ambiente perfecto para la convivencia. Un estudio que puede convertirse fácilmente en habitación adicional brinda flexibilidad para diferentes necesidades. En la planta alta, las tres habitaciones incluyen una suite principal con walk-in closet. El patio trasero diseñado con área de juegos infantiles y espacio para jardín garantiza entretenimiento al aire libre. Construida con materiales duraderos y bajo consumo energético, esta propiedad combina practicidad y calidad constructiva.",
+  },
+  {
+    id: 3,
+    state: ProjectState.UNDER_CONSTRUCTION,
+    title: "Villa Eco Horizonte",
+    description:
+      "Residencia sustentable con certificación LEED, diseñada para aprovechar los recursos naturales.",
+    image: "/api/placeholder/600/400",
+    location: "Eco Residencial Horizonte",
+    year: "2025",
+    area: "320 m²",
+    features: [
+      "Sistema de captación y tratamiento de agua pluvial",
+      "Paneles solares para autoconsumo energético",
+      "Materiales ecoamigables y de producción local",
+      "Ventilación cruzada y diseño bioclimático",
+      "Huerto y jardines verticales"
+    ],
+    gallery: [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+    ],
+    fullDescription:
+      "Villa Eco Horizonte representa nuestro compromiso con la sustentabilidad y el futuro del planeta. Esta innovadora residencia de 320m² está diseñada siguiendo principios bioclimáticos que maximizan el aprovechamiento de recursos naturales. El sistema de captación de agua pluvial abastece sanitarios, riego e incluso la piscina natural con filtración biológica. Los paneles solares de última generación permiten que la casa genere más energía de la que consume durante gran parte del año. Los materiales utilizados combinan técnicas constructivas tradicionales optimizadas con tecnologías modernas de bajo impacto ambiental. Las ventanas estratégicamente ubicadas garantizan iluminación natural durante el día y ventilación cruzada que reduce la necesidad de climatización artificial. Los espacios interiores se distribuyen en 3 habitaciones, 2.5 baños, amplias áreas sociales y un estudio con vista al jardín vertical. Cada aspecto de Villa Eco Horizonte ha sido pensado para ofrecer confort mientras se minimiza la huella ecológica.",
+  },
 ];
+
+
 // Función que se ejecuta cuando el DOM está listo
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar proyectos en el grid
