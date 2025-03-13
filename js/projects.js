@@ -12,7 +12,7 @@ const projectsData = [
     title: "Residencia Valle Verde",
     description:
       "Casa moderna de lujo con amplios espacios, jardín, piscina y acabados de primera calidad.",
-    image: "/api/placeholder/600/400",
+    image: "images/projects/1/project_1_1.webp",
     location: "Valle Verde, Sector Exclusivo",
     year: "2024",
     area: "450 m²",
@@ -24,10 +24,9 @@ const projectsData = [
       "Jardín paisajístico con sistema de riego automatizado"
     ],
     gallery: [
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
+      "images/projects/1/project_1_1.webp",
+      "images/projects/1/project_1_1.webp",
+      "images/projects/1/project_1_1.webp",
     ],
     fullDescription:
       "Residencia Valle Verde es una espectacular casa de lujo diseñada para quienes buscan exclusividad y confort. Ubicada en una de las zonas más prestigiosas de la ciudad, esta propiedad de 450m² combina elegancia arquitectónica y funcionalidad. La planta baja ofrece amplios espacios sociales con ventanales de piso a techo que integran el interior con el jardín y la piscina. La cocina gourmet cuenta con electrodomésticos de alta gama e isla central. En la planta alta, la suite principal incluye vestidor y baño tipo spa. El sistema domótico permite controlar iluminación, clima, seguridad y entretenimiento desde una aplicación móvil. Los acabados de mármol, madera de nogal y cristal templado reflejan la calidad superior que caracteriza nuestras construcciones.",
@@ -38,7 +37,7 @@ const projectsData = [
     title: "Casa Familiar Los Pinos",
     description:
       "Acogedora residencia familiar con espacios versátiles, perfecta para familias jóvenes.",
-    image: "/api/placeholder/600/400",
+    image: "images/projects/2/project_2_1.webp",
     location: "Urbanización Los Pinos",
     year: "2023",
     area: "280 m²",
@@ -50,9 +49,9 @@ const projectsData = [
       "Garaje para 2 vehículos"
     ],
     gallery: [
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
+      "images/projects/2/project_2_1.webp",
+      "images/projects/2/project_2_1.webp",
+      "images/projects/2/project_2_1.webp",
     ],
     fullDescription:
       "Casa Familiar Los Pinos representa la vivienda ideal para familias contemporáneas. Con un diseño práctico y acogedor, esta residencia de 280m² ofrece espacios versátiles que se adaptan al crecimiento familiar. La planta baja presenta un concepto abierto que integra sala, comedor y cocina, creando un ambiente perfecto para la convivencia. Un estudio que puede convertirse fácilmente en habitación adicional brinda flexibilidad para diferentes necesidades. En la planta alta, las tres habitaciones incluyen una suite principal con walk-in closet. El patio trasero diseñado con área de juegos infantiles y espacio para jardín garantiza entretenimiento al aire libre. Construida con materiales duraderos y bajo consumo energético, esta propiedad combina practicidad y calidad constructiva.",
@@ -63,7 +62,7 @@ const projectsData = [
     title: "Villa Eco Horizonte",
     description:
       "Residencia sustentable con certificación LEED, diseñada para aprovechar los recursos naturales.",
-    image: "/api/placeholder/600/400",
+    image: "images/projects/3/project_3_1.webp",
     location: "Eco Residencial Horizonte",
     year: "2025",
     area: "320 m²",
@@ -75,9 +74,9 @@ const projectsData = [
       "Huerto y jardines verticales"
     ],
     gallery: [
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
+      "images/projects/3/project_3_1.webp",
+      "images/projects/3/project_3_1.webp",
+      "images/projects/3/project_3_1.webp",
     ],
     fullDescription:
       "Villa Eco Horizonte representa nuestro compromiso con la sustentabilidad y el futuro del planeta. Esta innovadora residencia de 320m² está diseñada siguiendo principios bioclimáticos que maximizan el aprovechamiento de recursos naturales. El sistema de captación de agua pluvial abastece sanitarios, riego e incluso la piscina natural con filtración biológica. Los paneles solares de última generación permiten que la casa genere más energía de la que consume durante gran parte del año. Los materiales utilizados combinan técnicas constructivas tradicionales optimizadas con tecnologías modernas de bajo impacto ambiental. Las ventanas estratégicamente ubicadas garantizan iluminación natural durante el día y ventilación cruzada que reduce la necesidad de climatización artificial. Los espacios interiores se distribuyen en 3 habitaciones, 2.5 baños, amplias áreas sociales y un estudio con vista al jardín vertical. Cada aspecto de Villa Eco Horizonte ha sido pensado para ofrecer confort mientras se minimiza la huella ecológica.",
@@ -128,7 +127,7 @@ function loadProjects() {
         
         projectCard.innerHTML = `
             <div class="project-img-container">
-                <img src="${project.image}" alt="${project.title}" class="project-img">
+                <img src="${project.image}" alt="${project.title}" class="project-img" loading="lazy">
             </div>
             <div class="project-info">
                 <span class="project-state ${stateClass}">${project.state.charAt(0).toUpperCase() + project.state.slice(1)}</span>

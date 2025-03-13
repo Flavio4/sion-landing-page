@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sion Desarrollos - Construyendo tu futuro</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -163,7 +162,7 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Nuestro Portafolio</span>
                 <h2 class="section-title">Proyectos Destacados</h2>
-                <p class="section-description">Conoce algunos de nuestros proyectos más emblemáticos</p>
+                <p class="section-description">Conoce algunos de nuestros proyectos</p>
             </div>
 
             <div class="projects-grid" id="projectsGrid">
@@ -179,17 +178,17 @@
             <div class="modal-body">
                 <div class="modal-gallery">
                     <div class="gallery-main">
-                        <img id="modalMainImage" src="/api/placeholder/800/600" alt="Imagen principal del proyecto">
+                        <img id="modalMainImage" loading="lazy">
                     </div>
                     <div class="gallery-thumbs">
                         <div class="thumb active">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 1">
+                            <img src="/api/placeholder/150/100" loading="lazy" alt="Miniatura 1" />
                         </div>
                         <div class="thumb">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 2">
+                            <img src="/api/placeholder/150/100" loading="lazy" alt="Miniatura 2" />
                         </div>
                         <div class="thumb">
-                            <img src="/api/placeholder/150/100" alt="Miniatura 3">
+                            <img src="/api/placeholder/150/100" loading="lazy" alt="Miniatura 3" />
                         </div>
                     </div>
                 </div>
@@ -300,7 +299,7 @@
                     </div>
                 </div>
                 <div class="why-us-image" data-aos="fade-left">
-                    <img src="/api/placeholder/600/800" alt="Equipo Sion Desarrollos">
+                    <img src="/api/placeholder/600/800" loading="lazy" alt="Equipo Sion Desarrollos">
                 </div>
             </div>
         </div>
@@ -316,7 +315,7 @@
             </div>
             <div class="about-content">
                 <div class="about-img" data-aos="fade-right">
-                    <img src="images/constructores-1.jpg" alt="Equipo Sion Desarrollos">
+                    <img src="images/constructores-1.webp" loading="lazy" alt="Equipo Sion Desarrollos">
                     <div class="experience-badge">
                         <span>15+</span>
                         <p>Años de<br>Experiencia</p>
@@ -373,7 +372,7 @@
                     </div>
                     <p class="testimonial-text">Sion Desarrollos transformó nuestra idea en una realidad que superó todas nuestras expectativas. Su profesionalismo y atención al detalle son incomparables.</p>
                     <div class="testimonial-author">
-                        <img src="/api/placeholder/80/80" alt="Cliente 1" class="author-img">
+                        <img src="/api/placeholder/80/80" loading="lazy" alt="Cliente 1" class="author-img">
                         <div class="author-info">
                             <h4>Carlos Mendoza</h4>
                             <p>Propietario, Residencial Las Palmas</p>
@@ -393,7 +392,7 @@
                     </div>
                     <p class="testimonial-text">Trabajar con Sion Desarrollos fue una experiencia excepcional. Entregaron nuestro proyecto comercial a tiempo y dentro del presupuesto, con una calidad superior.</p>
                     <div class="testimonial-author">
-                        <img src="/api/placeholder/80/80" alt="Cliente 2" class="author-img">
+                        <img src="/api/placeholder/80/80" loading="lazy" alt="Cliente 2" class="author-img">
                         <div class="author-info">
                             <h4>Laura Sánchez</h4>
                             <p>Directora, Grupo Empresarial Ágora</p>
@@ -413,7 +412,7 @@
                     </div>
                     <p class="testimonial-text">Su enfoque innovador y sustentable hizo que nuestro proyecto industrial fuera no solo funcional sino también eficiente energéticamente, generando ahorros significativos.</p>
                     <div class="testimonial-author">
-                        <img src="/api/placeholder/80/80" alt="Cliente 3" class="author-img">
+                        <img src="/api/placeholder/80/80" loading="lazy" alt="Cliente 3" class="author-img">
                         <div class="author-info">
                             <h4>Roberto Guzmán</h4>
                             <p>CEO, Industrias RTG</p>
@@ -522,12 +521,6 @@
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="map-overlay"></div>
-        <img src="/api/placeholder/1920/400" alt="Mapa de ubicación" class="map-img">
-    </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -587,6 +580,7 @@
 
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a76233c04a.js" crossorigin="anonymous"></script>
     <script src="js/main.js" type="module"></script>
     <script src="js/projects.js"></script>
     <script src="js/project-modal.js"></script>
