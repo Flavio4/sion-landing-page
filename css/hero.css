@@ -195,6 +195,7 @@
     
     .hero-content {
         margin-top: 0;
+        margin-left: 25px;
     }
     
     .hero-buttons {
@@ -229,6 +230,10 @@
     .hero h1 {
         font-size: 2.2rem;
         margin-bottom: 10px;
+    }
+
+    .hero-content {
+        margin-left: 0px
     }
     
     .hero-subtitle {
