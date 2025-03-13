@@ -1,8 +1,14 @@
+const ProjectState = Object.freeze({
+    ON_SALE: "en venta",
+    SOLD: "vendido",
+    UNDER_CONSTRUCTION: "en construccion",
+});
+
 // Datos de proyectos
 const projectsData = [
     {
       id: 1,
-      category: "residencial",
+      state: ProjectState.ON_SALE,
       title: "Torres Mirador",
       description:
         "Complejo residencial de lujo con 120 apartamentos, áreas comunes y vista panorámica.",
@@ -27,7 +33,7 @@ const projectsData = [
     },
     {
       id: 2,
-      category: "comercial",
+      state: ProjectState.SOLD,
       title: "Centro Empresarial Sion",
       description:
         "Moderno edificio de oficinas con certificación LEED y tecnología de vanguardia.",
@@ -50,7 +56,7 @@ const projectsData = [
     },
     {
       id: 3,
-      category: "hospitalario",
+      state: ProjectState.UNDER_CONSTRUCTION,
       title: "Hospital del Valle",
       description:
         "Centro médico de alta complejidad con tecnología de punta y servicios integrales.",
@@ -71,8 +77,7 @@ const projectsData = [
       fullDescription:
         "El Hospital del Valle es un proyecto de salud de última generación que ofrece servicios médicos de alta complejidad en un entorno seguro y confortable. Con una ubicación estratégica y un diseño arquitectónico innovador, el hospital cuenta con áreas de hospitalización, quirófanos, laboratorios y consultorios equipados con tecnología de punta. Además, su enfoque en la sostenibilidad y la eficiencia energética lo convierten en un referente en la región.",
     },
-  ];
-
+];
 // Función que se ejecuta cuando el DOM está listo
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar proyectos en el grid
@@ -96,13 +101,30 @@ function loadProjects() {
         projectCard.setAttribute('data-aos', 'fade-up');
         projectCard.setAttribute('data-aos-delay', delay);
         projectCard.setAttribute('data-id', project.id);
+        projectCard.setAttribute('data-state', project.state);
+
+        // Determinar la clase CSS para el estado
+        let stateClass = '';
+        switch (project.state) {
+            case 'vendido':
+                stateClass = 'state-sold';
+                break;
+            case 'en venta':
+                stateClass = 'state-for-sale';
+                break;
+            case 'en construccion':
+                stateClass = 'state-under-construction';
+                break;
+            default:
+                stateClass = '';
+        }
         
         projectCard.innerHTML = `
             <div class="project-img-container">
                 <img src="${project.image}" alt="${project.title}" class="project-img">
             </div>
             <div class="project-info">
-                <span class="project-category">${project.category.charAt(0).toUpperCase() + project.category.slice(1)}</span>
+                <span class="project-state ${stateClass}">${project.state.charAt(0).toUpperCase() + project.state.slice(1)}</span>
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
                 <button class="project-link-btn view-project-btn" data-project="${project.id}">

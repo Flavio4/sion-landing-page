@@ -73,10 +73,26 @@ function openProjectModal(projectId) {
     } else if (!currentProject) {
         return; // No hay datos de proyectos disponibles
     }
+
+    // Determinar la clase CSS para el estado
+    let stateClass = '';
+    switch (currentProject.state) {
+        case 'vendido':
+            stateClass = 'state-sold';
+            break;
+        case 'en venta':
+            stateClass = 'state-for-sale';
+            break;
+        case 'en construccion':
+            stateClass = 'state-under-construction';
+            break;
+        default:
+            stateClass = '';
+    }
     
     // Llenar el modal con los datos del proyecto
-    document.getElementById('modalCategory').textContent = 
-        currentProject.category.charAt(0).toUpperCase() + currentProject.category.slice(1);
+    document.getElementById('modalState').textContent = currentProject.state.charAt(0).toUpperCase() + currentProject.state.slice(1);
+    document.getElementById('modalState').className = `project-state ${stateClass}`;
     document.getElementById('modalTitle').textContent = currentProject.title;
     document.getElementById('modalLocation').textContent = currentProject.location;
     document.getElementById('modalYear').textContent = "Año: " + currentProject.year;

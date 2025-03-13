@@ -59,10 +59,9 @@
     flex-direction: column;
 }
 
-.project-category {
+/* Estilos para los estados de los proyectos */
+.project-state {
     display: inline-block;
-    background-color: var(--color-tertiary-light);
-    color: var(--color-tertiary);
     font-size: 0.8rem;
     font-weight: 600;
     padding: 5px 15px;
@@ -70,6 +69,22 @@
     margin-bottom: 15px;
 }
 
+.state-sold {
+    background-color: rgba(236, 72, 153, 0.1);
+    color: #ec4899;
+}
+
+.state-for-sale {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.state-under-construction {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+/* Estilos para el título y descripción del proyecto */
 .project-title {
     font-size: 1.4rem;
     margin-bottom: 12px;
@@ -83,6 +98,7 @@
     margin-bottom: 20px;
 }
 
+/* Botón de enlace al proyecto */
 .project-link-btn {
     display: inline-flex;
     align-items: center;
