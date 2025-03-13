@@ -183,3 +183,68 @@
         font-size: 1.1rem;
     }
 }
+
+/* Ajuste para la sección hero en pantallas de poca altura */
+@media screen and (max-height: 700px) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    
+    .hero-content {
+        margin-top: 0;
+    }
+    
+    .hero-buttons {
+        margin-bottom: 30px;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero p {
+        margin-bottom: 25px;
+    }
+    
+    .hero-clients {
+        margin-bottom: 20px;
+    }
+    
+    .scroll-indicator {
+        position: relative;
+        bottom: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .hero {
+        padding-top: 70px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-subtitle {
+        margin-bottom: 15px;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-buttons {
+        margin-bottom: 20px;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
