@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Inicialización de AOS (Animate On Scroll)
 function initializeAOS() {
     AOS.init({
-        duration: 800,
+        duration: 300,
         easing: "ease",
         once: true,
         offset: 100,
