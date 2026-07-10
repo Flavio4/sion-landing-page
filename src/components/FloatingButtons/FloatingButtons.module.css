@@ -1,0 +1,82 @@
+.floating {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 900;
+}
+
+.whatsapp {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  animation: pulse 2.2s infinite;
+}
+.whatsapp:hover {
+  background: #1ebc5a;
+  transform: translateY(-4px);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.backToTop {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--plum);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+.backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.backToTop:hover {
+  background: var(--red);
+}
+
+@media (max-width: 560px) {
+  .floating {
+    bottom: 18px;
+    right: 18px;
+    gap: 10px;
+  }
+  .whatsapp {
+    width: 48px;
+    height: 48px;
+  }
+  .backToTop {
+    width: 40px;
+    height: 40px;
+  }
+}
