@@ -1,12 +1,13 @@
 .card {
-  background: var(--plum);
-  color: #f3edf3;
+  background: var(--bg);
+  color: var(--plum);
+  border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 44px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm), var(--shadow-md);
 }
 
 .header {
@@ -29,12 +30,12 @@
 }
 
 .header h3 {
-  color: #f3edf3;
+  color: var(--plum);
   font-size: 1.3rem;
 }
 
 .desc {
-  color: rgba(243, 237, 243, 0.72);
+  color: var(--gray);
   margin-bottom: 28px;
   font-size: 0.98rem;
 }
@@ -59,7 +60,7 @@
 
 .contacts {
   margin-top: auto;
-  border-top: 1px solid rgba(243, 237, 243, 0.16);
+  border-top: 1px solid var(--line);
   padding-top: 24px;
   display: flex;
   flex-direction: column;
@@ -74,9 +75,9 @@
   font-size: 0.92rem;
 }
 .contactRow span:first-child {
-  color: rgba(243, 237, 243, 0.85);
+  color: var(--plum);
 }
 .contactRow a {
-  color: #a6e6c1;
+  color: var(--red-dark);
   font-weight: 600;
 }

@@ -25,12 +25,8 @@
 
 .card.featured {
   grid-row: span 2;
-  background: var(--plum);
-  color: #f3edf3;
-  border-color: var(--plum);
-}
-.card.featured .desc {
-  color: rgba(243, 237, 243, 0.75);
+  background: var(--bg);
+  border: 2px solid var(--red);
 }
 
 .ribbon {
@@ -93,8 +89,8 @@
   font-weight: 600;
   border-radius: 100px;
   padding: 5px 12px;
-  background: rgba(243, 237, 243, 0.12);
-  color: rgba(243, 237, 243, 0.85);
+  background: var(--red-tint);
+  color: var(--red-dark);
 }
 
 @media (max-width: 760px) {

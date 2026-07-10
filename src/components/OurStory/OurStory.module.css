@@ -18,7 +18,8 @@
 .imageFrame {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: var(--plum);
+  background: var(--gray-light);
+  border: 1px solid var(--line);
   aspect-ratio: 4 / 5;
   display: flex;
   align-items: center;
@@ -30,7 +31,7 @@
   object-fit: cover;
 }
 .imagePlaceholder {
-  color: rgba(243, 237, 243, 0.5);
+  color: var(--gray);
 }
 
 .badge {

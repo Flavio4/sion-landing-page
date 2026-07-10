@@ -1,7 +1,8 @@
 .footer {
-  background: var(--plum);
-  color: rgba(243, 237, 243, 0.85);
+  background: var(--bg);
+  color: var(--gray);
   padding: 80px 0 24px;
+  border-top: 1px solid var(--line);
 }
 
 .grid {
@@ -21,7 +22,7 @@
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.4rem;
-  color: #f3edf3;
+  color: var(--plum);
 }
 .brandWord span {
   color: var(--red);
@@ -30,18 +31,18 @@
   font-weight: 600;
   font-size: 0.62rem;
   letter-spacing: 0.22em;
-  color: rgba(243, 237, 243, 0.55);
+  color: var(--gray);
 }
 
 .blurb {
   font-size: 0.92rem;
   line-height: 1.7;
-  color: rgba(243, 237, 243, 0.65);
+  color: var(--gray);
   max-width: 320px;
 }
 
 .colTitle {
-  color: #f3edf3;
+  color: var(--plum);
   font-size: 1.05rem;
   margin-bottom: 24px;
   position: relative;
@@ -61,17 +62,17 @@
   margin-bottom: 12px;
 }
 .linkList a {
-  color: rgba(243, 237, 243, 0.68);
+  color: var(--gray);
   font-size: 0.92rem;
   transition: color 0.2s ease;
 }
 .linkList a:hover {
-  color: #fff;
+  color: var(--red);
 }
 
 .contactList p {
   font-size: 0.9rem;
-  color: rgba(243, 237, 243, 0.68);
+  color: var(--gray);
   margin-bottom: 14px;
   line-height: 1.5;
 }
@@ -83,9 +84,9 @@
   flex-wrap: wrap;
   gap: 12px;
   padding-top: 24px;
-  border-top: 1px solid rgba(243, 237, 243, 0.14);
+  border-top: 1px solid var(--line);
   font-size: 0.88rem;
-  color: rgba(243, 237, 243, 0.55);
+  color: var(--gray);
 }
 
 @media (max-width: 900px) {

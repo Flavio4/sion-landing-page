@@ -1,6 +1,7 @@
 import { useScrollEffects } from '../../hooks/useScrollEffects'
 import { useMobileMenu } from '../../hooks/useMobileMenu'
 import { useSmoothScroll } from '../../hooks/useSmoothScroll'
+import ThemeToggle from './ThemeToggle'
 import styles from './Header.module.css'
 
 const NAV_LINKS = [
@@ -44,6 +45,7 @@ export default function Header() {
         </a>
 
         <nav className={styles.nav}>
+          <ThemeToggle />
           <button
             ref={btnRef}
             className={cx(styles.menuBtn, open && styles.open)}
