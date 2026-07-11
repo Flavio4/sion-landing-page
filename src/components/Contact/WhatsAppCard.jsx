@@ -1,11 +1,6 @@
 import { contact } from '../../content/site'
 import styles from './WhatsAppCard.module.css'
 
-function toWhatsAppLink(localPhone) {
-  const digits = localPhone.replace(/\D/g, '').replace(/^0/, '')
-  return `https://wa.me/595${digits}`
-}
-
 export default function WhatsAppCard() {
   return (
     <div className={styles.card} data-aos="fade-left">
@@ -26,16 +21,6 @@ export default function WhatsAppCard() {
         </svg>
         Escribinos por WhatsApp
       </a>
-      <div className={styles.contacts}>
-        {contact.whatsappContacts.map((person) => (
-          <div key={person.name} className={styles.contactRow}>
-            <span>{person.name}</span>
-            <a href={toWhatsAppLink(person.phone)} target="_blank" rel="noreferrer">
-              {person.phone}
-            </a>
-          </div>
-        ))}
-      </div>
     </div>
   )
 }

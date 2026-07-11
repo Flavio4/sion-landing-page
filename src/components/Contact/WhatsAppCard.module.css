@@ -50,34 +50,9 @@
   padding: 15px 24px;
   border-radius: var(--radius-md);
   font-weight: 600;
-  margin-bottom: 28px;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .mainBtn:hover {
   background: #1ebc5a;
   transform: translateY(-2px);
-}
-
-.contacts {
-  margin-top: auto;
-  border-top: 1px solid var(--line);
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.contactRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 0.92rem;
-}
-.contactRow span:first-child {
-  color: var(--plum);
-}
-.contactRow a {
-  color: var(--red-dark);
-  font-weight: 600;
 }

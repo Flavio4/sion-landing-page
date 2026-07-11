@@ -1,7 +1,6 @@
 import { useScrollEffects } from '../../hooks/useScrollEffects'
 import { useMobileMenu } from '../../hooks/useMobileMenu'
 import { useSmoothScroll } from '../../hooks/useSmoothScroll'
-import ThemeToggle from './ThemeToggle'
 import styles from './Header.module.css'
 
 const NAV_LINKS = [
@@ -31,21 +30,16 @@ export default function Header() {
     <header className={cx(styles.header, scrolled && styles.scrolled)}>
       <div className={cx('container', styles.inner)}>
         <a href="#inicio" className={styles.brand} onClick={handleNavClick('inicio')}>
-          <svg width="30" height="30" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <path d="M4 30V21l4-6v15z" stroke="var(--red)" strokeWidth="1.6" strokeLinejoin="round" />
-            <path d="M11 30V15l5-7 5 7v15z" stroke="var(--red)" strokeWidth="1.6" strokeLinejoin="round" />
-            <path d="M18.5 30V8l3.5-4 3.5 4v22z" fill="var(--red)" />
-            <path d="M28 30V19l4 4v7z" stroke="var(--red)" strokeWidth="1.6" strokeLinejoin="round" />
-            <rect x="17.5" y="31.5" width="9" height="2.5" fill="var(--plum)" />
-          </svg>
-          <span className={styles.brandWord}>
-            sion<span>.</span>
+          <img src="/images/sion-header-logo.png" alt="Sion Desarrollos" className={styles.brandIcon} />
+          <span className={styles.brandText}>
+            <span className={styles.brandWord}>
+              sion<span>.</span>
+            </span>
+            <span className={styles.brandSub}>DESARROLLOS</span>
           </span>
-          <span className={styles.brandSub}>DESARROLLOS</span>
         </a>
 
         <nav className={styles.nav}>
-          <ThemeToggle />
           <button
             ref={btnRef}
             className={cx(styles.menuBtn, open && styles.open)}

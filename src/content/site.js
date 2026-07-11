@@ -95,10 +95,6 @@ export const contact = {
   email: 'siondesarrollos@gmail.com',
   hours: '24 horas',
   whatsappLink: 'https://wa.me/595971920015',
-  whatsappContacts: [
-    { name: 'Walter Valenzuela', phone: '0971 920 015' },
-    { name: 'Tamara Valenzuela', phone: '0971 623 846' },
-  ],
   social: {
     facebook: 'https://www.facebook.com/share/16dxgx3ADw/',
     tiktok: 'https://www.tiktok.com/@sion.desarrollos?_t=ZM-8ww9LH2n6mL&_r=1',
