@@ -1,3 +1,4 @@
+import { company } from '../../content/site'
 import { useScrollEffects } from '../../hooks/useScrollEffects'
 import { useMobileMenu } from '../../hooks/useMobileMenu'
 import { useSmoothScroll } from '../../hooks/useSmoothScroll'
@@ -30,7 +31,7 @@ export default function Header() {
     <header className={cx(styles.header, scrolled && styles.scrolled)}>
       <div className={cx('container', styles.inner)}>
         <a href="#inicio" className={styles.brand} onClick={handleNavClick('inicio')}>
-          <img src="/images/sion-header-logo.png" alt="Sion Desarrollos" className={styles.brandIcon} />
+          <img src={company.logoUrl} alt="Sion Desarrollos" className={styles.brandIcon} />
           <span className={styles.brandText}>
             <span className={styles.brandWord}>
               sion<span>.</span>

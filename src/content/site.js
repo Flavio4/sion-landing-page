@@ -4,8 +4,7 @@
 export const company = {
   name: 'Sion Desarrollos E.A.S',
   domain: 'siondesarrollospy.com',
-  // TODO: reemplazar por el logo real una vez descargado de Drive a /public/images
-  logoUrl: null,
+  logoUrl: '/images/sion-header-logo.png',
 }
 
 export const hero = {
